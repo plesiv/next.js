@@ -2,6 +2,8 @@
 title: Cannot access `Date.now()`, `Date()`, or `new Date()` before other uncached data or Request data in a Server Component
 ---
 
+123
+
 ## Why This Error Occurred
 
 `Date.now()`, `Date()`, or `new Date()` was used in a Server Component before accessing other uncached data through APIs like `fetch()` and native database drivers, or Request data through built-in APIs like `cookies()`, `headers()`, `connection()` and `searchParams`. Accessing the current time in this way interferes with the prerendering and prefetching capabilities of Next.js.
